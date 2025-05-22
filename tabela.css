@@ -1,32 +1,97 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.elemento{
-    background-color: rgb(100, 100, 100);
-    border-radius: 10px;
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(235, 220, 220);
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    position: absolute;
+    top: 10%;
+    left: 33%;
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+td {
+    padding: 0;
+    width: 5.5%;
     height: 70px;
-    width: 70px;
+    vertical-align: top;
+}
+
+.elemento {
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 62px;
+    height: 62px;
+}
+
+.elemento-vazio {
+    border: none;
+    background: transparent;
+}
+
+.elemento:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.numero {
+    font-size: 10px;
+    text-align: left;
+}
+
+.simbolo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nome {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.massa {
+    font-size: 8px;
     align-items: center;
-    justify-items: center;
 }
-h3{
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: smaller;
-    margin-right: 60px;
-}
-h1{
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    align-items: center;
-}
-h4{
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    font-size:small;
-}
-p{
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-}
+
+.metal-alcalino { background-color: #FF5733; color: white; }
+.metal-alcalino-terroso { background-color: #00C853; color: white; }
+.lantanideo { background-color: #FFD700; }
+.actinideo { background-color: #FF33A8; color: white; }
+.metal-transicao { background-color: #3380FF; color: white; }
+.metal { background-color: #AAAAAA; }
+.metaloide { background-color: #00FFD0; }
+.nao-metal { background-color: #00FF00; }
+.halogenio { background-color: #FF00FF; color: white; }
+.gas-nobre { background-color: #FFD600; }
+.pos-transicao { background-color: #FF9800; }
+.outros { background-color: #CCCCCC; }
