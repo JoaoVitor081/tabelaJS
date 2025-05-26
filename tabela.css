@@ -18,7 +18,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #13293d;
     position: absolute;
     top: 10%;
     left: 33%;
@@ -66,32 +66,89 @@ td {
 .numero {
     font-size: 10px;
     text-align: left;
+    color: #ffffff;
 }
 
 .simbolo {
     font-size: 20px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .nome {
-    font-size: 10px;
+    font-size: 8px;
     margin-bottom: 5px;
+    color: #ffffff;
 }
 
 .massa {
     font-size: 8px;
     align-items: center;
+    color: #ffffff;
 }
 
-.metal-alcalino { background-color: #FF5733; color: white; }
+.metal-alcalino { background-color: #006494; color: white; }
 .metal-alcalino-terroso { background-color: #00C853; color: white; }
 .lantanideo { background-color: #FFD700; }
 .actinideo { background-color: #FF33A8; color: white; }
-.metal-transicao { background-color: #3380FF; color: white; }
-.metal { background-color: #AAAAAA; }
-.metaloide { background-color: #00FFD0; }
-.nao-metal { background-color: #00FF00; }
-.halogenio { background-color: #FF00FF; color: white; }
-.gas-nobre { background-color: #FFD600; }
+.metal-transicao { background-color: #247ba0; color: white; }
+.metal { background-color: #13293d; }
+.metaloide { background-color: #f872fc; }
+.nao-metal { background-color: #64c964; }
+.halogenio { background-color: #1b98e0; color: white; }
+.gas-nobre { background-color: #92d8e0; }
 .pos-transicao { background-color: #FF9800; }
 .outros { background-color: #CCCCCC; }
+
+#elemento-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.elemento-detalhes {
+    font-family: Arial, sans-serif;
+}
+
+.elemento-detalhes h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.info-grid p {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.elemento:hover {
+    transform: scale(1.03);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.elemento-vazio{
+    background-color: transparent;
+    border: none;
+    cursor:default;
+}
+.linha-elementos2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: auto;
+}
+
+.tabela-inferior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
