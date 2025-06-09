@@ -105,6 +105,7 @@ td {
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 8px;
+    overflow: auto;
 }
 
 .elemento-detalhes {
@@ -151,4 +152,12 @@ td {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+
+.voltacima{
+    position: absolute;
+    left: 21%;
+    top: 810px;
+    font-size: 20px;
+    border: none;
 }

@@ -54,14 +54,15 @@ function renderTabelaPeriodica() {
     }
 }
 
-
 function mostrarInformacoesElemento(elemento) {
     const infoContainer = document.getElementById('elemento-info');
     if (!infoContainer) return;
-    
+
+
     infoContainer.innerHTML = `
         <div class="elemento-detalhes">
             <h2>${elemento.nome} (${elemento.simbolo})</h2>
+            <button id="voltacima1" class="voltacima">⬆️</button>
             <div class="info-grid">
                 <p><strong>Número Atômico:</strong> ${elemento.numeroAtomico}</p>
                 <p><strong>Massa Atômica:</strong> ${elemento.massaAtomica}</p>
@@ -82,6 +83,20 @@ function mostrarInformacoesElemento(elemento) {
             </div>
         </div>
     `;
+
+    window.scrollBy({
+        top: 5000,
+        behavior: 'smooth'
+      });
+
+      const voltarButton = document.getElementById('voltacima1');
+    voltarButton.addEventListener('click', function() {
+    try {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch (e) {
+      window.scrollTo(0, 0);
+    }
+    });
 }
 
 function CriarTabelaInferior(elementos) {
